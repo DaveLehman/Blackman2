@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MyScripts\Game Scripts\Triggers\SensorDoors.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\ScarecrowCharacterController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
