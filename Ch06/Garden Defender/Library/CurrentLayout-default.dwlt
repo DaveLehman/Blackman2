@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -45,10 +45,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 957
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 127
+  controlID: 163
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,10 +223,10 @@ MonoBehaviour:
     y: 0
     width: 1466
     height: 957
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 128
+  controlID: 20
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,10 +248,10 @@ MonoBehaviour:
     y: 0
     width: 1466
     height: 567
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 129
+  controlID: 21
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,22 +425,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MyImportedAssets/AnimatedStuff/Animated Assets
+    - Assets/MyPrefabs/Characters
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MyImportedAssets/AnimatedStuff/Animated Assets
+  - Assets/MyPrefabs/Characters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: F:\terable2\Programming\Unity\BlackmanGardenNew\Ch06\Garden
     Defender
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: 003a0000
-    m_LastClickedID: 14848
-    m_ExpandedIDs: 00000000e4390000e6390000e8390000ea390000ec3900001e3a000000ca9a3b
+    scrollPos: {x: 0, y: 39}
+    m_SelectedIDs: 683b0000
+    m_LastClickedID: 15208
+    m_ExpandedIDs: 00000000463a0000483a00004a3a00004c3a00004e3a0000c63a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e4390000e6390000e8390000ea390000ec390000
+    m_ExpandedIDs: 00000000463a0000483a00004a3a00004c3a00004e3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -496,7 +496,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000f845000050740000d69100002e3b0000aa3a00007c3a0000d83a0000de3a0000
+    m_ExpandedInstanceIDs: c6230000f845000050740000d69100002e3b0000aa3a00007c3a0000d83a0000de3a0000e03a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,7 +556,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 86
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
@@ -590,9 +590,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c3a0000
+      m_SelectedIDs: d03e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6af2ffffaefaffff60fbffff
+      m_ExpandedIDs: 60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -652,9 +652,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.8903532, y: 0.007369995, z: -6.5840206}
+    m_Target: {x: 4.0017843, y: -0.0023210049, z: -6.7341127}
     speed: 2
-    m_Value: {x: 3.8903532, y: 0.007369995, z: -6.5840206}
+    m_Value: {x: 4.0017843, y: -0.0023210049, z: -6.7341127}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -701,13 +701,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.028917471, y: 0.9640725, z: -0.23624149, w: 0.11800922}
+    m_Target: {x: 0.025722498, y: 0.97010094, z: -0.11875574, w: 0.21012028}
     speed: 2
-    m_Value: {x: 0.028917354, y: 0.9640686, z: -0.23624054, w: 0.11800874}
+    m_Value: {x: 0.026217788, y: 0.9696003, z: -0.12017093, w: 0.21153498}
   m_Size:
-    m_Target: 3.2927244
+    m_Target: 2.092096
     speed: 2
-    m_Value: 3.2927244
+    m_Value: 1.7920961
   m_Ortho:
     m_Target: 0
     speed: 2
