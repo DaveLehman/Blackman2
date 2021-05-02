@@ -7916,6 +7916,8 @@ GameObject:
   - component: {fileID: 415110891199296428}
   - component: {fileID: 6370686231895470958}
   - component: {fileID: 6370686231895470957}
+  - component: {fileID: 6370686231895470959}
+  - component: {fileID: 6370686231895470960}
   m_Layer: 0
   m_Name: GardenGnomeProto
   m_TagString: Player
@@ -7953,6 +7955,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &6370686231895470959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370686231895470956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7103a317b200ce44496a03b10b9800fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 1
+  sensitivityX: 15
+  sensitivityY: 15
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+--- !u!114 &6370686231895470960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6370686231895470956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bbcac6b07a6e8a47bf3b567c9e4dc78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardSpeed: 2
+  backwardSpeed: 1
+  strafeSpeed: 2
 --- !u!1 &6491654776823061152
 GameObject:
   m_ObjectHideFlags: 0
