@@ -5,6 +5,8 @@ namespace UnityStandardAssets.Utility
 {
 	public class SmoothFollow : MonoBehaviour
 	{
+		// not written by me. Main Camera's Parent
+		// is following the Gnome using SmoothFollow script
 
 		// The target we are following
 		[SerializeField]

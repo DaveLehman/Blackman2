@@ -7,7 +7,7 @@ public class SensorDoors : MonoBehaviour
 	public AnimationClip clipOpen; // the open animation
 	public AnimationClip clipClose; // the close animation
 
-	public bool debug = true;
+	public bool debug = false;
 
     private void Awake()
     {
