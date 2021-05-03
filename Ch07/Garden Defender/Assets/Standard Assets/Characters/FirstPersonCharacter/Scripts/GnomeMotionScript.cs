@@ -8,8 +8,12 @@ public class GnomeMotionScript : MonoBehaviour
     public float backwardSpeed = 1f;
     public float strafeSpeed = 2f;
 
+    public bool debug = true;
+
     private float fbInput;
     private float lrInput;
+
+    
 
     // new for physics
     private Rigidbody _rb;
@@ -18,12 +22,20 @@ public class GnomeMotionScript : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        if(_rb == null)
+        {
+            Debug.Log("Gnome Motion Script failed to find its associated RigidBody");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("f/b: " + fbInput + ", l/r: " + lrInput);
+        if(debug)
+        {
+            Debug.Log("f/b: " + fbInput + ", l/r: " + lrInput);
+        }
+        
         fbInput = Input.GetAxis("Vertical");// * moveSpeed;
         lrInput = Input.GetAxis("Horizontal");// * rotateSpeed;
 

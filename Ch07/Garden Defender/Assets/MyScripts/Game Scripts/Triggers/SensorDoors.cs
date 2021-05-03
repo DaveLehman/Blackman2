@@ -7,14 +7,33 @@ public class SensorDoors : MonoBehaviour
 	public AnimationClip clipOpen; // the open animation
 	public AnimationClip clipClose; // the close animation
 
+	public bool debug = true;
 
-	// open the gates
-	void OnTriggerEnter(Collider defender)
+    private void Awake()
+    {
+		if(clipOpen == null)
+        {
+			Debug.Log("SensorDoors script failed to find the clipOpen animation script");
+        }
+		if (clipClose == null)
+		{
+			Debug.Log("SensorDoors script failed to find the clipClose animation script");
+		}
+	}
+    // open the gates
+    void OnTriggerEnter(Collider defender)
 	{
-		print("Trigger Entered");
+
+		if (debug)
+		{
+			print("SensorDoors Trigger Entered");
+		}
 		if (defender.gameObject.tag == "Player")
 		{
-			print("by player");
+			if (debug)
+			{
+				print("by player");
+			}
 			GetComponent<Animation>().Play(clipOpen.name);
 			GetComponent<AudioSource>().Play(); // play the clip loaded in the audio component	
 		}
@@ -23,10 +42,17 @@ public class SensorDoors : MonoBehaviour
 	// close the gates
 	void OnTriggerExit(Collider defender)
 	{
-		print("Trigger Exited");
+		if (debug)
+		{
+			print("SensorDoors Trigger Exited");
+		}
 		if (defender.gameObject.tag == "Player")
 		{
-			print("by player");
+			if(debug)
+            {
+				print("by player");
+			}
+			
 			GetComponent<Animation>().Play(clipClose.name);
 			GetComponent<AudioSource>().Play(); // play the clip loaded in the audio component
 		}
