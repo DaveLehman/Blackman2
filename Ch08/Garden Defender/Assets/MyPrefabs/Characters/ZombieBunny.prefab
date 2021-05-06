@@ -138,9 +138,10 @@ GameObject:
   - component: {fileID: 3832752771686799481}
   - component: {fileID: 8112789056808826517}
   - component: {fileID: 6640106059847971946}
+  - component: {fileID: 6314934305693172578}
   m_Layer: 0
   m_Name: ZombieBunny
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +159,7 @@ Transform:
   m_Children:
   - {fileID: 4176640337661694066}
   - {fileID: 7552078467360484776}
+  - {fileID: 1845398201188014433}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -209,6 +211,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6314934305693172578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098819636987030203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fe62be679df1249a557e00825a8aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  gameManager: {fileID: 0}
 --- !u!1 &1168984541268152886
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,3 +721,65 @@ Transform:
   m_Father: {fileID: 4354261968896848649}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6047710829286047989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3486208675241725106}
+    m_Modifications:
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.38330674
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04912883
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.374009
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493700566153542362, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      propertyPath: m_Name
+      value: Potato Ammo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+--- !u!4 &1845398201188014433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5364318323277568404, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+  m_PrefabInstance: {fileID: 6047710829286047989}
+  m_PrefabAsset: {fileID: 0}

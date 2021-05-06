@@ -2403,14 +2403,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41680be3fd9c2a4787c3856a20df183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: 1
+  debug: 0
   zombieBunny: {fileID: 1098819636987030203, guid: 9d537da78a8afba47897e2d8140e0f0b, type: 3}
   currentZone: {fileID: 1566189753}
   bunHolder: {fileID: 938919918}
+  gameManager: {fileID: 1515539244}
   litterSize: 10
   canReproduce: 1
   reproRate: 12
-  currentBunCount: 0
 --- !u!4 &566143306
 Transform:
   m_ObjectHideFlags: 0
@@ -5110,6 +5110,50 @@ MonoBehaviour:
   myArea:
   - {fileID: 752322783}
   debug: 0
+--- !u!1 &1515539244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1515539245}
+  - component: {fileID: 1515539246}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1515539245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515539244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.221539, y: -0.12176776, z: 13.874708}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1515539246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515539244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccdeaf4b5af3e4344aa1d2c66247acf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 1
 --- !u!1001 &1524439149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7948,63 +7992,6 @@ Transform:
   m_Father: {fileID: 543450651909112352}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1911000189472783099
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5442622611552470519, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_Name
-      value: Potato Ammo
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.38330674
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.04912883
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 11.374009
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 8369474624988227257, guid: ac7587f1d2219064da13309e242d527d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ac7587f1d2219064da13309e242d527d, type: 3}
 --- !u!23 &1981590246493942531
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9106,9 +9093,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2487226389975712356, guid: 2e7e5907d52a0384a98f54199d34bd30, type: 3}
+      propertyPath: debug
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2487226389975712356, guid: 2e7e5907d52a0384a98f54199d34bd30, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 5442622611552470519, guid: ac7587f1d2219064da13309e242d527d, type: 3}
+      objectReference: {fileID: 8493700566153542362, guid: ac7587f1d2219064da13309e242d527d, type: 3}
     - target: {fileID: 3653449762465349531, guid: 2e7e5907d52a0384a98f54199d34bd30, type: 3}
       propertyPath: m_Name
       value: GardenGnomeProto

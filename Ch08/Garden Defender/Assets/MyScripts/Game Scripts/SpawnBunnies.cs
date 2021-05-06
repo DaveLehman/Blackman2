@@ -8,13 +8,14 @@ public class SpawnBunnies : MonoBehaviour
 
     public GameObject zombieBunny;
     public Transform currentZone;   // The invisible Zombie Creation Zone
-    public Transform bunHolder;     // assign the clone to this object's trasnform
+    public Transform bunHolder;     // assign the clone to this object's transform
+    public GameObject gameManager;
 
     public int litterSize = 8;
     public bool canReproduce = true;
     public float reproRate = 12f;      // base time before respawning
 
-    public int currentBunCount = 0;
+    //public int currentBunCount = 0;
 
     float minX;
     float maxX;
@@ -33,6 +34,12 @@ public class SpawnBunnies : MonoBehaviour
         {
             Debug.Log("SpawnBunnies script in Zombie Spawn Manager does not have a reference to the Zombie Creation Zone object");
         }
+        gameManager = GameObject.Find("Game Manager");
+        if(gameManager == null)
+        {
+            Debug.Log("SpawnBunnies script failed to find an object named Game Manager!");
+        }
+
         minX = currentZone.position.x - currentZone.localScale.x / 2;
         maxX = currentZone.position.x + currentZone.localScale.x / 2;
         minZ = currentZone.position.z - currentZone.localScale.z / 2;
@@ -70,10 +77,11 @@ public class SpawnBunnies : MonoBehaviour
             // assign to the parent
             zBunny.transform.parent = bunHolder;
         }
-        currentBunCount += count;
+        gameManager.SendMessage("UpdateCount", count, SendMessageOptions.DontRequireReceiver);
+        //currentBunCount += count;
         if(debug)
         {
-            Debug.Log("Current bun count is " + currentBunCount);
+            //Debug.Log("Current bun count is " + currentBunCount);
         }
     }
 
