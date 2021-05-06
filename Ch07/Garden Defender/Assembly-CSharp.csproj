@@ -56,17 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyScripts\Game Scripts\DistanceDetector.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\DistanceDetector.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\Triggers\SensorDoors.cs" />
-    <Compile Include="Assets\MyScripts\MyMouseLook.cs" />
-    <Compile Include="Assets\MyScripts\GnomeTest.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\Triggers\OcclusionManager.cs" />
-    <Compile Include="Assets\MyScripts\Game Scripts\GnomeRotateScript.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\GnomeRotateScript.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\HideAtStart.cs" />
-    <Compile Include="Assets\MyScripts\Game Scripts\BazookaArmRaiseLower.cs" />
-    <Compile Include="Assets\MyScripts\Game Scripts\GnomeFPController.cs" />
-    <Compile Include="Assets\MyScripts\Game Scripts\ScarecrowCharacterController.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\BazookaArmRaiseLower.cs" />
+    <Compile Include="Assets\MyScripts\ScarecrowCharacterController.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\SpawnBunnies.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\PlantVeggies.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

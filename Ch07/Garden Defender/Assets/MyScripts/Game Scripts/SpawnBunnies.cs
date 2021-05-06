@@ -7,7 +7,8 @@ public class SpawnBunnies : MonoBehaviour
     public bool debug = true;
 
     public GameObject zombieBunny;
-    public Transform currentZone;
+    public Transform currentZone;   // The invisible Zombie Creation Zone
+    public Transform bunHolder;     // assign the clone to this object's trasnform
 
     public int litterSize = 8;
     public bool canReproduce = true;
@@ -66,6 +67,8 @@ public class SpawnBunnies : MonoBehaviour
             zBunny.transform.localEulerAngles = rot;
             // randomize the animation clip
             zBunny.GetComponent<Animator>().Play("Bunny Eat", 0, Random.Range(0.0f, 1.0f));
+            // assign to the parent
+            zBunny.transform.parent = bunHolder;
         }
         currentBunCount += count;
         if(debug)
