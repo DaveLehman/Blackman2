@@ -59,12 +59,14 @@
     <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\DistanceDetector.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\Triggers\SensorDoors.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\Triggers\OcclusionManager.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\PlantVeggies.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\GnomeRotateScript.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\HideAtStart.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\GnomeAndCamera\BazookaArmRaiseLower.cs" />
     <Compile Include="Assets\MyScripts\ScarecrowCharacterController.cs" />
     <Compile Include="Assets\MyScripts\Game Scripts\SpawnBunnies.cs" />
-    <Compile Include="Assets\MyScripts\Game Scripts\PlantVeggies.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\Weaponry\PotatoLauncher.cs" />
+    <Compile Include="Assets\MyScripts\Game Scripts\Weaponry\PotatoProjectile.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
